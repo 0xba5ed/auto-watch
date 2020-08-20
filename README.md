@@ -15,6 +15,10 @@ For feature number 1 and 3, yes it does. For feature number 2, I'm not sure and 
 I installed 4chanX exclusively for feature number 1. Instead it completely nuked the native settings
 window with 1000 extra features I don't care about. So I wrote this instead.
 
+##### B-b-but I don't wanna use Chrome!
+There is absolutely nothing about the content script `aw.js` that is bound to Chrome to operate. You can very easily
+just take `aw.js` and execute it on its own and everything will work the same. 
+
 
 
 ### Installation
