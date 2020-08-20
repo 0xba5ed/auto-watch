@@ -1,0 +1,35 @@
+{
+    "name": "Auto Watch",
+    "version": "1.0",
+    "description": "Automatically watches threads you post in!",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action" : {
+        "default_icon": {
+            "16": "images/aw16.png",
+            "32": "images/aw32.png",
+            "48": "images/aw48.png",
+            "128": "images/aw128.png"
+        }
+    },
+    "icons": {
+        "16": "images/aw16.png",
+        "32": "images/aw32.png",
+        "48": "images/aw48.png",
+        "128": "images/aw128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://boards.4channel.org/*",
+                "https://boards.4chan.org/*"
+            ],
+            "js": ["aw.js"]
+        }
+    ],
+
+    "manifest_version": 2
+}
